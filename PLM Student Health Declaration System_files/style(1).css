@@ -1,0 +1,166 @@
+body {
+  height: 100%;
+}
+
+* {
+  /* Add smooth transition */
+  transition: all 0.15s ease-in-out;
+}
+
+/* Customize Scroll Bar */
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d4af37;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #f1f1f1;
+}
+
+.button {
+  background-color: #d4af37;
+  border: none;
+  color: #dbe9f4;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.student-no-input,
+.student-password-input {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  border-radius: 4px;
+  background-color: transparent;
+  color: black;
+
+  /* Remove default styling */
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.student-no-input:focus,
+.student-password-input:focus {
+  border: 1px solid #d4af37 !important;
+}
+
+.form-group label {
+  color: #000;
+  font-size: 1.5rem;
+}
+
+.modal-body small {
+  color: #474747;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.modal-body small u {
+  color: #474747;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.modal-body h3 {
+  color: #000;
+  font-size: 3rem;
+}
+
+.student-details-labels h5 {
+  color: #000;
+}
+
+.header-logo {
+  width: 100%;
+  max-width: 300px;
+  padding-right: 3rem;
+}
+
+.search-btn {
+  width: 100%;
+}
+
+.search-form {
+  width: 100%;
+  max-width: 500px;
+}
+
+.ithelp-email:hover {
+  color: #d4af37;
+}
+
+.modal-dialog {
+  /* Slide-up Transition on page load */
+  transition: slide-up 1s ease-in-out !important;
+}
+
+.show-pass-checkbox-wrapper > * {
+  padding: 0 !important;
+  margin: 0 !important;
+  cursor: pointer;
+}
+.show-pass-checkbox-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-direction: row;
+
+  margin-top: 1em;
+}
+
+.hd-notavail-header {
+  width: 100%;
+  max-width: 500px;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.hd-notavail-wrapper {
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  gap: 3rem;
+  flex-direction: row;
+
+  margin-top: 3rem;
+}
+
+.hd-notavail-content {
+  width: 100%;
+  max-width: 350px;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+/* use slide-up keyframe */
+@keyframes slide-up {
+  0% {
+    transform: translateY(100%) !important;
+    opacity: 0 !important;
+  }
+  100% {
+    transform: translateY(0) !important;
+    opacity: 1 !important;
+  }
+}
+
+/* Below 500 px, make form-group flex-direction to column */
+@media (max-width: 500px) {
+  .form-group {
+    flex-direction: column;
+  }
+
+  .hd-notavail-wrapper {
+    flex-direction: column;
+  }
+}
